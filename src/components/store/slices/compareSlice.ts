@@ -31,7 +31,7 @@ const compareSlice = createSlice({
 
         }
       },
-      // Remove product from compare list
+    
       removeProductFromCompare: (state, action: PayloadAction<number>) => {
         state.comparedProducts = state.comparedProducts.filter((p) => p.id !== action.payload);
         state.text="Product removed from comparison."

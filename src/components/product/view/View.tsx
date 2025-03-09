@@ -86,8 +86,8 @@ const View: React.FC<ViewProps> = ({ navigation = true }) => {
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    height: "100vh", // Full viewport height
-                    width: "100%",   // Full width
+                    height: "100vh", 
+                    width: "100%",   
                 }}>
                     <Spin size="large" />
                 </div>

@@ -14,7 +14,7 @@ const ExpandableText: React.FC<{ text: string }> = ({ text }) => {
       >
         {text}
       </Paragraph>
-      {text.length > 150 && ( // Show button only if text is long
+      {text.length > 150 && (
         <Button type="link" onClick={() => setExpanded(!expanded)}>
           {expanded ? "Read Less" : "Read More"}
         </Button>

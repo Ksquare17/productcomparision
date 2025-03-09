@@ -21,8 +21,7 @@ const BaseLayout: React.FC = () => {
     <Layout>
       <CustomHeader colorBgContainer={colorBgContainer}>Profule</CustomHeader>
       <div style={{ padding: '32px' }}>
-        <Layout style={{ background: colorBgContainer, borderRadius: borderRadiusLG }}
-        >
+        <Layout style={{ background: colorBgContainer, borderRadius: borderRadiusLG }}>
           
           <SideBar collapsed={collapsed} onCollapse={setCollapsed} menuItems={Menuitems} colorBgContainer={colorBgContainer}/>
 

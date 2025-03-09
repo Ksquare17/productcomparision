@@ -26,8 +26,8 @@ const CompareTable: React.FC<CompareTableProps> = ({ products, onRemove }) => {
             )
         },
         {
-            label: "Discount", 
-            key: "discountPercentage", 
+            label: "Discount",
+            key: "discountPercentage",
             render: (p: Product) => (
                 <Text strong={p.discountPercentage === minDiscount} style={p.discountPercentage === minDiscount ? { color: "red" } : {}}>
                     {p.discountPercentage}%

@@ -33,10 +33,14 @@ const SideBar: React.FC<CustomSiderProps> = ({ collapsed, onCollapse, menuItems,
         navigate(e.key);
     };
     return (
-        <Sider trigger={null} collapsible collapsed={collapsed} onCollapse={onCollapse} style={siderStyle} 
-        breakpoint="xs" 
-          
-        width={200}>
+        <Sider
+            trigger={null}
+            collapsible
+            collapsed={collapsed}
+            onCollapse={onCollapse}
+            style={siderStyle}
+            breakpoint="xs"
+            width={200}>
             <div className="demo-logo-vertical" />
             <Menu theme="dark" selectedKeys={[location.pathname]} mode="inline" items={menuItems} style={{ height: '100%', margin: '20px 0' }} onClick={handleMenuClick} />
         </Sider>
