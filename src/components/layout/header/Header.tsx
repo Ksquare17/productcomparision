@@ -10,7 +10,8 @@ type CustomHeaderProps = React.ComponentProps<typeof Header> & {
 
 const CustomHeader: React.FC<CustomHeaderProps> = () => {
   return (
-    <Header style={{
+    <Header 
+    style={{
         display: "flex",
         alignItems: "center",
         padding: "0 20px",
@@ -18,7 +19,7 @@ const CustomHeader: React.FC<CustomHeaderProps> = () => {
         color: "#fff",
         boxShadow: "0px 2px 10px rgba(0, 0, 0, 0.2)"
     }}>
-        {/* Logo Section */}
+      
         <div style={{ display: "flex", alignItems: "center" }}>
             <ShoppingCartOutlined style={{ fontSize: "24px", marginRight: "10px", color: "#fff" }} />
             <Typography.Title level={3} style={{ margin: 0, color: "#fff" }}>
